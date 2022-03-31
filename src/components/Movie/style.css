@@ -1,0 +1,38 @@
+.movies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.one_movie{
+    border: 1px rgb(226, 225, 225) solid;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px lightgray;
+    display: block;
+    padding: 10px;
+}
+
+.one_movie h2{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline rgb(139, 193, 211);
+}
+
+.one_movie img{
+    max-width: 50%;
+    display: block;
+}
+
+.movie_details{
+    display: flex;
+    flex-shrink: 1;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}

@@ -13,9 +13,11 @@ import MovieList from './components/MovieList';
 const App = () => (
   <>
    <Header/>
-    <div>
+    <div className = "movies">
       {movies.map(movie =>
         <Movie
+        title={movie.title}
+          key = {movie.id}
           poster={movie.poster}
           director={movie.director} 
           year={movie.year} 
@@ -24,9 +26,7 @@ const App = () => (
       )
       }
     </div>
-    <MovieList movies= {movies}/>
-     
-
+   <MovieList movies= {movies}/>
   </>
 );
 
