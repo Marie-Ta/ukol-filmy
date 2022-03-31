@@ -9,20 +9,22 @@ import Movie from './components/Movie';
 import movies from './movies.js';
 import MovieList from './components/MovieList';
 
+
 const App = () => (
   <>
    <Header/>
     <div>
       {movies.map(movie =>
         <Movie
-          director={movies.director} 
-          year={movies.year} 
-          genre={movies.genre}
-          rating={movies.rating}/>
+          poster={movie.poster}
+          director={movie.director} 
+          year={movie.year} 
+          genre={movie.genre}
+          rating={movie.rating}/>
       )
       }
     </div>
-    
+    <MovieList movies= {movies}/>
      
 
   </>

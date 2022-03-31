@@ -6,7 +6,7 @@ const Movie = ({title, poster, year, rating, director, genre}) => {
     <div className="one_movie">
       <h2>{title}</h2>
         
-        <img className ="poster" src={poster} alt="Plakát k filmu" />
+        <img className ="poster" src={ '/assets/' + poster} alt="Plakát k filmu" />
         
         <ul>
             <li>Režie: {director}</li>
